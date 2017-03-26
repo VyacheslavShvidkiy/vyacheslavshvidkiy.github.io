@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+  /* line 2, ../sass/media.scss */
+  #header {
+    background: url(../img/header-main.jpg);
+    background-size: cover;
+  }
+}

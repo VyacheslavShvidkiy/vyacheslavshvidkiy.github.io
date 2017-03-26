@@ -1,0 +1,298 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Delius+Unicase|Droid+Serif");
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/style.scss */
+body,
+.container-fluid,
+.row {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 15, ../sass/style.scss */
+h1 {
+  font-size: 45px;
+  font-family: 'Delius Unicase', cursive;
+  text-align: center;
+  margin-top: 25px;
+  color: #fff;
+}
+
+/* line 23, ../sass/style.scss */
+h2 {
+  font-size: 30px;
+  font-family: 'Droid Serif', serif;
+}
+
+/* line 28, ../sass/style.scss */
+h3 {
+  font-size: 24px;
+  font-family: 'Droid Serif', serif;
+}
+
+/* line 33, ../sass/style.scss */
+p {
+  font-family: 'Droid Serif', serif;
+  font-size: 17px;
+}
+
+/* line 38, ../sass/style.scss */
+#header {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/hea.png);
+  background-size: cover;
+  background-color: #b2eef7;
+}
+/* line 44, ../sass/style.scss */
+#header h1 {
+  padding: 20px 0px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 4px 4px 2px #969696;
+}
+/* line 49, ../sass/style.scss */
+#header h1 span {
+  color: #000;
+}
+
+/* line 55, ../sass/style.scss */
+#about {
+  width: 100%;
+  background: transparent;
+}
+/* line 58, ../sass/style.scss */
+#about h1 {
+  color: #fff;
+}
+/* line 61, ../sass/style.scss */
+#about h2 {
+  color: #fff;
+}
+/* line 64, ../sass/style.scss */
+#about div {
+  display: inline-block;
+  padding: 50px;
+  text-align: center;
+}
+
+/* line 72, ../sass/style.scss */
+#princip-wrapper {
+  background-color: #b2eef7;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 25px;
+}
+/* line 79, ../sass/style.scss */
+#princip-wrapper .princip {
+  width: 300px;
+  margin: auto;
+  border: 1px dashed #e8e5e5;
+  margin-top: 20px;
+  min-height: 252px;
+}
+/* line 86, ../sass/style.scss */
+#princip-wrapper img {
+  padding-top: 40px;
+}
+/* line 89, ../sass/style.scss */
+#princip-wrapper p {
+  text-align: justify;
+  padding: 20px 20px;
+}
+
+/* line 97, ../sass/style.scss */
+#mywork {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: transparent;
+}
+/* line 106, ../sass/style.scss */
+#mywork .container {
+  text-align: center;
+  width: 320px;
+  margin: 20px auto;
+  -webkit-perspective: 1200;
+  perspective: 1200;
+  -moz-transform: perspective(1200px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+/* line 117, ../sass/style.scss */
+#mywork .flipper {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: .7s linear;
+  -moz-transition: .7s linear;
+  transition: .7s linear;
+}
+/* line 128, ../sass/style.scss */
+#mywork .front,
+#mywork .back {
+  font-family: 'Cabin', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 10px 10px 20px;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 142, ../sass/style.scss */
+#mywork .front {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  background: #b2eef7;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #f5f5f5;
+}
+/* line 151, ../sass/style.scss */
+#mywork .front img {
+  width: 100%;
+  height: auto;
+}
+/* line 156, ../sass/style.scss */
+#mywork i {
+  color: #DCB8B2;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+/* line 161, ../sass/style.scss */
+#mywork h3 {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+/* line 167, ../sass/style.scss */
+#mywork p {
+  font-size: 14px;
+  line-height: 25px;
+}
+/* line 171, ../sass/style.scss */
+#mywork .header h3 {
+  color: #18191a;
+}
+/* line 174, ../sass/style.scss */
+#mywork .front p {
+  color: #818285;
+}
+/* line 177, ../sass/style.scss */
+#mywork .back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  background: #DCB8B2;
+  color: white;
+}
+/* line 185, ../sass/style.scss */
+#mywork .back h3 {
+  position: relative;
+}
+/* line 188, ../sass/style.scss */
+#mywork .back h3:after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  background: white;
+  margin-left: -25px;
+}
+/* line 198, ../sass/style.scss */
+#mywork .back p {
+  padding-top: 15px;
+}
+/* line 201, ../sass/style.scss */
+#mywork .container:hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
