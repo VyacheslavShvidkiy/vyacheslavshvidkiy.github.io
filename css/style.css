@@ -83,27 +83,29 @@ h1 {
   text-align: center;
   margin-top: 25px;
   color: #fff;
+  text-shadow: 0px 5px 10px #ccc;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 h2 {
   font-size: 30px;
   font-family: 'Droid Serif', serif;
+  text-shadow: 0px 5px 10px #ececd7;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 h3 {
   font-size: 24px;
   font-family: 'Droid Serif', serif;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 p {
   font-family: 'Droid Serif', serif;
   font-size: 17px;
 }
 
-/* line 38, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 #header {
   width: 100%;
   min-height: 100vh;
@@ -111,66 +113,81 @@ p {
   background-size: cover;
   background-color: #b2eef7;
 }
-/* line 44, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 #header h1 {
   padding: 20px 0px;
   color: #fff;
   font-weight: bold;
   text-shadow: 4px 4px 2px #969696;
 }
-/* line 49, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 #header h1 span {
   color: #000;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 #about {
   width: 100%;
   background: transparent;
 }
-/* line 58, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 #about h1 {
   color: #fff;
 }
-/* line 61, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 #about h2 {
   color: #fff;
 }
-/* line 64, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 #about div {
   display: inline-block;
   padding: 50px;
   text-align: center;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 #princip-wrapper {
-  background-color: #b2eef7;
+  /* IE10+ */
+  background-image: -ms-radial-gradient(left top, ellipse farthest-corner, #B2EEF7 50%, #5E818A 95%);
+  /* Mozilla Firefox */
+  background-image: -moz-radial-gradient(left top, ellipse farthest-corner, #B2EEF7 50%, #5E818A 95%);
+  /* Opera */
+  background-image: -o-radial-gradient(left top, ellipse farthest-corner, #B2EEF7 50%, #5E818A 95%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(radial, left top, 0, left top, 572, color-stop(50, #B2EEF7), color-stop(95, #5E818A));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-radial-gradient(left top, ellipse farthest-corner, #B2EEF7 50%, #5E818A 95%);
+  /* W3C Markup */
+  background-image: radial-gradient(ellipse farthest-corner at left top, #b2eef7 50%, #5e818a 95%);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 25px;
 }
-/* line 79, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 #princip-wrapper .princip {
   width: 300px;
   margin: auto;
-  border: 1px dashed #e8e5e5;
+  border: 1px solid #e8e5e5;
+  -webkit-box-shadow: 7px 6px 15px -2px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: 7px 6px 15px -2px rgba(0, 0, 0, 0.74);
+  box-shadow: 7px 6px 15px -2px rgba(0, 0, 0, 0.74);
   margin-top: 20px;
   min-height: 252px;
+  background: url(http://api.thumbr.it/whitenoise-361x370.png?background=#b2eef7ff&noise=626262&density=66&opacity=47);
 }
-/* line 86, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 #princip-wrapper img {
   padding-top: 40px;
 }
-/* line 89, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 #princip-wrapper p {
   text-align: justify;
   padding: 20px 20px;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 #mywork {
   width: 100%;
   height: 100vh;
@@ -180,7 +197,7 @@ p {
   justify-content: space-around;
   background: transparent;
 }
-/* line 106, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 #mywork .container {
   text-align: center;
   width: 320px;
@@ -192,7 +209,7 @@ p {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-/* line 117, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 #mywork .flipper {
   position: relative;
   width: 320px;
@@ -204,7 +221,7 @@ p {
   -moz-transition: .7s linear;
   transition: .7s linear;
 }
-/* line 128, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 #mywork .front,
 #mywork .back {
   font-family: 'Cabin', sans-serif;
@@ -219,49 +236,49 @@ p {
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 142, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 #mywork .front {
   z-index: 2;
   -webkit-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   transform: rotateY(0deg);
-  background: #b2eef7;
+  background: url(http://api.thumbr.it/whitenoise-361x370.png?background=#b2eef700&noise=626262&density=66&opacity=47);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #f5f5f5;
 }
-/* line 151, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 #mywork .front img {
   width: 100%;
   height: auto;
 }
-/* line 156, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 #mywork i {
   color: #DCB8B2;
   display: inline-block;
   margin-bottom: 15px;
 }
-/* line 161, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 #mywork h3 {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   margin: 0 0 15px;
 }
-/* line 167, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 #mywork p {
   font-size: 14px;
   line-height: 25px;
 }
-/* line 171, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 #mywork .header h3 {
   color: #18191a;
 }
-/* line 174, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 #mywork .front p {
-  color: #818285;
+  color: #18191a;
 }
-/* line 177, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 #mywork .back {
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
@@ -270,11 +287,11 @@ p {
   background: #DCB8B2;
   color: white;
 }
-/* line 185, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 #mywork .back h3 {
   position: relative;
 }
-/* line 188, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 #mywork .back h3:after {
   content: "";
   width: 50px;
@@ -285,11 +302,11 @@ p {
   background: white;
   margin-left: -25px;
 }
-/* line 198, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 #mywork .back p {
   padding-top: 15px;
 }
-/* line 201, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 #mywork .container:hover .flipper {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
