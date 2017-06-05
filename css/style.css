@@ -209,7 +209,12 @@ p {
   justify-content: space-around;
   background: transparent;
 }
-/* line 135, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
+#mywork .works img {
+  width: 100%;
+  max-height: 150px;
+}
+/* line 138, ../sass/style.scss */
 #mywork .container {
   text-align: center;
   width: 320px;
@@ -221,7 +226,7 @@ p {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-/* line 146, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 #mywork .flipper {
   position: relative;
   width: 320px;
@@ -233,7 +238,7 @@ p {
   -moz-transition: .7s linear;
   transition: .7s linear;
 }
-/* line 157, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 #mywork .front,
 #mywork .back {
   font-family: 'Cabin', sans-serif;
@@ -248,7 +253,7 @@ p {
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* line 171, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 #mywork .front {
   z-index: 2;
   -webkit-transform: rotateY(0deg);
@@ -259,38 +264,38 @@ p {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #f5f5f5;
 }
-/* line 180, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 #mywork .front img {
   width: 100%;
   height: auto;
 }
-/* line 185, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 #mywork i {
   color: #DCB8B2;
   display: inline-block;
   margin-bottom: 15px;
 }
-/* line 190, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 #mywork h3 {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   margin: 0 0 15px;
 }
-/* line 196, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 #mywork p {
   font-size: 14px;
   line-height: 25px;
 }
-/* line 200, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 #mywork .header h3 {
   color: #18191a;
 }
-/* line 203, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 #mywork .front p {
   color: #18191a;
 }
-/* line 206, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 #mywork .back {
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
@@ -299,11 +304,11 @@ p {
   background: #DCB8B2;
   color: white;
 }
-/* line 214, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 #mywork .back h3 {
   position: relative;
 }
-/* line 217, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 #mywork .back h3:after {
   content: "";
   width: 50px;
@@ -314,11 +319,11 @@ p {
   background: white;
   margin-left: -25px;
 }
-/* line 227, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 #mywork .back p {
   padding-top: 15px;
 }
-/* line 230, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 #mywork .container:hover .flipper {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);

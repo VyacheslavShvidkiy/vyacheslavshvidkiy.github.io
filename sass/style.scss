@@ -131,7 +131,10 @@ p {
     flex-wrap: wrap;
     justify-content: space-around;
     background: transparent;
-    .work {}
+    .works img {
+        width: 100%;
+        max-height: 150px;
+    }
     .container {
         text-align: center;
         width: 320px;
