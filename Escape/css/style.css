@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap');
+html{
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    max-width: 940px;
+    margin: 0 auto;
+}
+/* HEAD START */
+.head{
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    padding-top: 20px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_item{
+    margin-right: 20px;
+}
+.nav_item:last-child{
+    margin-right: 0;
+}
+.nav_link{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: .3s font-weight linear;
+    transition: .3s font-size linear;
+}
+.active{
+    font-weight: 700;
+}
+.nav_link:hover{
+    font-weight: 700;
+}
+.head_content{
+    text-align: center;
+    margin-top: 177px;
+}
+.main_title{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 51px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+.head_description{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.63);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.view_post{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #DD783F;
+    border-radius: 3px;
+    padding: 12px 30px;
+}
+/* HEAD END */
+
+/* MAIN NAV START */
+.main_nav{
+    background: #FFFFFF;
+}
+.main_navigation{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 22px;
+    padding-bottom: 23px;
+}
+.navigation_link{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #768088;
+}
+.navigation_link:hover{
+    color: #343537;
+}
+/* MAIN NAV END */
+
+/* POSTS START */
+.posts{
+    background: #F7F7F7;
+    text-align: center;
+    padding-bottom: 65px;
+}
+.post_holder{
+    display: flex;
+    justify-content: space-around;
+}
+/* FEATURED START */
+.post_title{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 2px;
+    color: #2E2E2E;
+    border-bottom: 2px solid #DEDEDE;
+    max-width: 161px;
+    padding-top: 60px;
+    padding-bottom: 16px;
+    margin-bottom: 23px;
+}
+.post_featured{
+    display: flex;
+    justify-content: space-around;
+}
+.post_featured-item{
+    position: relative;
+}
+.fp{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    text-align: left;
+    width: 100%;
+}
+.fp_title{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.fp_discrip{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+}
+.fp_author{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.fp_author-item {
+    display: flex;
+    height: 26px;
+    align-items: center;
+    margin-top: 10px;
+}
+.fp_author-item img{
+    margin-right: 10px;
+}
+.author_name{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.data{
+    position: absolute;
+    bottom: -5px;
+    right: 40px;
+}
+.data_time{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+/* FEATURED END */
+/* RECENT STRT */
+.recent_holder{
+    max-width: 296px;
+    min-height: 291px;
+}
+.post_recent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.recent_info{
+    text-align: left;
+    padding-left: 13px;
+    padding-top: 14px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #EFEFEF;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 3px;
+}
+.recent_info-title{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #101315;
+    padding-bottom: 6px;
+}
+.recent_info-descript{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7A7A7A;
+}
+.recent_author{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 13px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 3px;
+}
+.rec_author{
+    display: flex;
+    height: 26px;
+    align-items: center;
+}
+.rec_author_name{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 35px;
+    color: #999999;
+    margin-left: 10px;
+}
+.rec_data_time{
+    ont-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 35px;
+    color: #999999; 
+    margin-right: 13px;
+}
+.sl{
+    margin-top: 30px;
+}
+/* RECENT END */
+/* POSTS END */
+
+/* FOOTER START */
+.footer{
+    text-align: center;
+    background: url(../img/footer_bg.jpg) no-repeat;
+    background-size: cover;
+}
+.footer_title{
+    padding-top: 80px;
+    padding-bottom: 17px;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #EFEFEF;
+    border-bottom: 1px solid #DEDEDE;
+    width: 188px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+#email{
+    padding: 18px 208px 18px 35px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+#email::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #817F83;
+    
+}
+.button{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #F8F8F8;
+    padding: 20.5px 43px 19.5px;
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 0px 3px 3px 0px;
+    margin-left: -3px;
+    border: none;
+}
+.footer_nav{
+    background: rgba(35, 47, 56, 0.6);
+    padding: 30px 0px;
+}
+.footer_holder{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_nav-list a{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer_nav-list a:hover{
+    color: rgba(252, 241, 241, 0.964);
+    font-weight: 700;
+}
+.footer_nav-list li{
+    margin-left: 20px;
+}
+/* FOOTER END */
