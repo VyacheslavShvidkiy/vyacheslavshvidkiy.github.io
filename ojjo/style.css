@@ -1,0 +1,244 @@
+*{
+	margin: 0 auto;
+}
+ul{
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.contant{
+	width: 1920px;
+}
+.header{
+	width: 100%;
+	height: 950px;
+	background-image: url(img/bgc.png);
+	background-position: center;
+}
+.header_nav{
+	font-size: 16px;
+	padding-top: 43px;
+	display: flex;
+	align-items: center;
+	padding-left: 340px;
+	padding-right: 300px;
+}
+.header_nav li {
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+.header_nav a {
+	color: #FFFFFF;
+}
+.nav_main{
+	margin-left: 126px;
+	margin-right: 126px;
+}
+.header_text{
+	color: #ffffff;
+	font-size: 36px;
+	font-family: 'Noto Serif';
+	font-style: normal;
+	font-weight: 700;
+	line-height: 49px;
+	text-align: center;
+	padding-top: 500px;
+}
+.header_buton{
+	font-size: 18px;
+	color: #fff;
+	background-color: #333333;
+	border: 1px solid #fff;
+	margin: 50px auto;
+ 	display: block;
+ 	width: 261px;
+	height: 45px;
+	text-align: center;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+.search{
+	padding-right: 15px;
+}
+.small_contant{
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+}
+.small_contant li{
+	display: inline-block;
+	border-right: 1px solid #fff;
+	padding-right: 15px;
+}
+.small_contant li:last-child{
+	border: none;
+}
+
+.p-heading{
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 140%;
+	text-align: center;
+	color: #333333;
+	padding-top: 75px;
+}
+.white{
+	color: #fff!important;
+}
+.p-title{
+	font-family: 'Noto Serif';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 41px;
+	text-align: center;
+	color: #333333;
+	padding-top: 16px;
+}
+.smal_contant{
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+}
+.category{
+	background-color: #E5E5E5;
+}
+.category_items li{
+	display: inline-block;
+	padding: 0px 9px;
+}
+.category_items button {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #333333;
+	padding: 17px 30px;
+	border: 1px solid #D6D6D6;
+	background-color: #E5E5E5;
+}
+.category_items button:hover{
+	background-color: #333;
+	color: #fff;
+	border: 1px solid #333;
+}
+.fotos{
+	margin: 0 450px;
+	width: 1100px;
+	padding-top: 60px;
+}
+.foto{
+	display: inline-block;
+	position: relative;
+}
+.foto h3{
+	position: absolute;
+	bottom: 50px;
+	left: 120px;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.foto img{
+	width: 320px;
+	height: 280px;
+	padding: 15px;
+}
+.salons{
+	width: 100%;
+	height: 540px;
+	background-image: url(img/salon_bg.png);
+}
+.text{
+	width: 730px;
+	height: 100px;
+	margin: 0 auto;
+	padding-top: 40px;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 140%;
+	text-align: center;
+}
+.salon_btn{
+	margin: 0 auto;
+	display: block;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #333333;
+	margin-top: 40px;
+	width: 220px;
+	height: 40px;
+	text-align: center;
+	padding-top: 20px;
+	background-color: #fff;
+}
+.post_title{
+	position: absolute;
+	bottom: 50px;
+	left: 30%;
+	color: #fff;
+	font-size: 21px;
+	text-align: center;
+}
+.social_img{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin-top: 50px;
+	padding-bottom: 150px;
+}
+.social_img td{
+	padding: 0px;
+}
+.mail{
+	width: 100%;
+	height: 480px;
+	background-image: url(img/salon_bg.png);
+}
+.mail_contant{
+	margin: 70px 550px;
+}
+.mail_items{
+	color: #fff;
+	display: block;
+	float: left;
+	padding: 0px 60px;
+}
+.mail_items li{
+	padding: 7px;
+	list-style-image: url(img/marker.png);
+}
+.form{
+	padding: 20px 23px;
+}
+.form_div{
+	width: 400px;
+	height: 85px;
+	background-color: #ffffff;
+	margin-left: 340px;
+	border: 1px solid #fff;
+}
