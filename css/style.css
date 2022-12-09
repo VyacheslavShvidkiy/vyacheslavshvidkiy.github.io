@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    color: #E4E4E4;
+}
+a{
+    text-decoration: none !important;
+}
+ul{
+    list-style-type: none !important;
+}
+body{
+    background: url(../img/Neuron_4.jpg) no-repeat;
+    position: relative;
+}
+#spy{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-family: 'Marck Script', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    background: rgba(11, 81, 97, 0.9);
+    padding: 20px;
+    height: 100px;
+    width: 100%;
+    z-index: 999;
+}
+.spy_list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.spy_link{
+    color: #E4E4E4;
+}
+.spy_link:hover{
+    color: #E4E4E4;  
+}
+.spy_link.active{
+    font-size: 30px;
+    color: #E29500!important;
+}
+#home{
+    min-height: 100vh;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.nav_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_item{
+    margin-right: 100px;
+}
+.nav_item:last-child{
+    margin-right: 0;
+}
+.nav_link{
+    font-family: 'Marck Script', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 21px;
+    position: relative;
+    color: #E4E4E4;
+}
+.nav_link:hover{
+    color: #E2A300;
+}
+.nav_link:hover::after{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #E2A300;
+}
+.language{
+    background-color: #03333F;
+}
+.burger_menu{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: none;
+    z-index: 5;
+}
+.middle{
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 38px;
+}
+.bottom{
+    content: '';
+    bottom: -18px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+}
+.top{
+    content: '';
+    bottom: 18px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+}
+.logo a{
+   display: flex; 
+   align-items: center;
+   font-size: 38px;
+}
+.logo p{
+    margin: 0;
+}
+.logo img{
+    margin-right: 7px;
+}
+.home_content{
+    display: flex; 
+    align-items: center;
+    font-size: 38px;
+    padding: 0px 15px;
+}
+.hello{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    margin-bottom: 27px;
+}
+.home_content_info h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 82px;
+    font-family: 'Marck Script', cursive;
+    margin-bottom: 27px;
+}
+.hci_desc{
+    margin-bottom: 27px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    max-width: 430px;
+}
+.contact{
+    background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
+    box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+    border-radius: 6px;
+    border: none;
+    padding: 14px 38px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+}
+.contact:hover, .contact:focus{
+    box-shadow: 0px 0px 50px rgba(226, 158, 0, 0.7);
+    color: rgba(43, 42, 42, 0.689);
+}
+.home_content_sharg{
+    position: relative;
+    max-width: 575px;
+    border: 40px solid #00C4F0;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 100px rgba(0, 196, 240, 0.5));
+    overflow: hidden;
+}
+.ellipse{
+    width: 100%;
+}
+.i_am{
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 80.2%;
+}
+
+#skills{
+    background: #053740;
+    padding: 0 15px 27px 15px;
+}
+.skills_items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px 0px 27px 0px;
+    text-align: center;
+}
+.skill{
+    width: 250px;
+    height: 250px;
+    background: #2A2A2A;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+    border-radius: 29px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 15px;
+}
+.skill img{
+    max-width: 80px;
+}
+.skill p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 50px 0 0;
+}
+#aboutme{
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 83px 300px 45px 300px;
+    background: url(../img/About_bg.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.about_content{
+    background: #2C2C2C;
+    border-radius: 14px;
+    padding: 63px;
+}
+.about_title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+    font-family: 'Marck Script', cursive;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+.about_desc{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+.foto{
+    display: none;
+}
+.foto  img{
+    width: 100%;
+}
+.foto_one{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background: #242424;
+    border-radius: 14px;
+    padding: 25px;
+    max-width: 320px;
+    max-height: 270px;
+}
+.foto_one img, .foto_two img, .foto_three img{
+    width: 100%;
+}
+.foto_two{
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    background: #242424;
+    border-radius: 14px;
+    padding: 25px;
+    max-width: 320px;
+    max-height: 270px;
+}
+.foto_three{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #242424;
+    border-radius: 14px;
+    padding: 25px;
+    max-width: 320px;
+    max-height: 270px;
+}
+/* Portfolio */
+#portfolio{
+    background: #03333F;
+    padding-bottom: 50px;
+    padding-top: 70px;
+}
+.portfolio_title{
+    margin-bottom: 15px;
+}
+.block_title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+    font-family: 'Marck Script', cursive;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+.block_title::after{
+    position: absolute;
+    content: '';
+    width: 10%;
+    height: 2px;
+    background: #E2A300;
+    bottom: 0;
+    left: 45%;
+}
+.prtfolio_block{
+    display: grid;
+    justify-content: center;
+    grid-auto-rows: minmax(100px, 250px);
+    grid-template-columns: repeat( auto-fill,320px);
+    margin-bottom: 50px;
+}
+.portfolio_item{
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    border: 3px solid #00C4F0;
+}
+.portfolio_wrapper{
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 81, 97, 0.9);
+    position: absolute;
+    bottom: -250px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: bottom .6s ease-in-out;
+}
+.portfolio_item:hover .portfolio_wrapper{
+    bottom: 0;
+}
+.eye{
+    max-width: 80px;
+    text-align: center;
+}
+.portfolio_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.git_block{
+    margin-top: 30px;
+}
+.git_link{
+    color: #E29500;
+}
+.git_link:hover{
+    color: #fff;
+}
+/* Contacts */
+#contacts{
+    background: #03333F;
+}
+.contacts_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px 150px;
+}
+.contact_item{
+    width: 55px;
+    height: 55px;
+    position: relative;
+    border-radius: 30%;
+    overflow: hidden;
+    margin-right: 25px;
+}
+.contact_item:last-child{
+    margin-right: 0;
+}
+.contact_img_front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .4s linear;
+}
+.contact_link:hover .contact_img_front{
+    opacity: 0;
+}
+.contact_img_back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+}
+.contact_link:hover .contact_img_back{
+    opacity: 1;
+}
